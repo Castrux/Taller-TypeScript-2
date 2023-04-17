@@ -6,8 +6,9 @@ class Serie {
   private _temporadas: number;
   private _episodios: number;
   private _sinopsis: string;
+  private _url: string;
   
-  constructor(id: number, titulo: string, canal: string, genero: string, temporadas: number, episodios: number, sinopsis: string) {
+  constructor(id: number, titulo: string, canal: string, genero: string, temporadas: number, episodios: number, sinopsis: string, url: string) {
     this._id = id;
     this._titulo = titulo;
     this._canal = canal
@@ -15,6 +16,7 @@ class Serie {
     this._temporadas = temporadas;
     this._episodios = episodios;
     this._sinopsis = sinopsis;
+    this._url = url
   }
   
   // Getters y Setters
